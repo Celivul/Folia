@@ -14,12 +14,12 @@ more helpful than some random error log caused by
 a breakage.
 
 diff --git a/src/main/java/io/papermc/paper/plugin/configuration/PluginMeta.java b/src/main/java/io/papermc/paper/plugin/configuration/PluginMeta.java
-index bcf91d048d84144f6acf9bfd2095df9ada2e585f..3072f95dc1cafb47c1820dc67c8d24991540fc4a 100644
+index 3c768d5ccf490e962d9638e92d4ea7c85670bad8..2dbc9fc268850c85e4e8d38da05586a004862c76 100644
 --- a/src/main/java/io/papermc/paper/plugin/configuration/PluginMeta.java
 +++ b/src/main/java/io/papermc/paper/plugin/configuration/PluginMeta.java
-@@ -200,4 +200,12 @@ public interface PluginMeta {
-     @Nullable
-     String getAPIVersion();
+@@ -183,4 +183,12 @@ public interface PluginMeta {
+      */
+     @Nullable String getAPIVersion();
  
 +    // Folia start - block plugins not marked as supported
 +    /**
@@ -31,7 +31,7 @@ index bcf91d048d84144f6acf9bfd2095df9ada2e585f..3072f95dc1cafb47c1820dc67c8d2499
 +
  }
 diff --git a/src/main/java/org/bukkit/plugin/PluginDescriptionFile.java b/src/main/java/org/bukkit/plugin/PluginDescriptionFile.java
-index a857e46fa6f0c212db93193e1fdd8b0ea9c33c38..90cd9568363a7532d600b627de605c12a7b816c7 100644
+index 6dfd51996893ca82b11a540cc18234e0b504f7ba..ff313bf0374c318971860a26f1629f708a5fec26 100644
 --- a/src/main/java/org/bukkit/plugin/PluginDescriptionFile.java
 +++ b/src/main/java/org/bukkit/plugin/PluginDescriptionFile.java
 @@ -267,6 +267,19 @@ public final class PluginDescriptionFile implements io.papermc.paper.plugin.conf
